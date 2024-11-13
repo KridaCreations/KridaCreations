@@ -13,7 +13,7 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 
 ## 📫 Get in Touch
 
-- 📧 Email: [utkarshalpuria@gmail.com](mailto:abhishek944440223@gmail.com)
-- 📍 Noida, India
+- 📧 Email: [abhishek944440223@gmail.com](mailto:abhishek944440223@gmail.com)
+- 📍 Bangalore, India
 
 ---
