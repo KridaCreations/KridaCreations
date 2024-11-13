@@ -2,7 +2,6 @@
 
 <h4 align="center">Welcome to my GitHub profile! I'm a passionate and dedicated Software Developer currently working at Carl Zeiss, India. My work primarily revolves around leveraging generative AI and developing cutting-edge web applications to streamline and innovate the software development process.</h4>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=utkarsh-alpuria&label=Profile%20views&color=0e75b6&style=flat" alt="utkarsh-alpuria" /> </p>
 
 ## 👨‍💻 About Me:
 
