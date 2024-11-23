@@ -136,6 +136,17 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
   </tr>
 </table>
 
+
+## LeetCode Stats
+
+[![LeetCode User Stats](https://leetcode.card.workers.dev/Abhishek_exe?theme=light&font=baloo&extension=activity)](https://leetcode.com/u/Abhishek_exe/)
+
+**Leetcode Profile**: [your-Abhishek_exe](https://leetcode.com/u/Abhishek_exe/)
+
+**Max Rating**: ![LeetCode Max Rating](https://img.shields.io/badge/1994%20-yellow?style=flat)
+
+> Feel free to check out my profile for more details about my problem-solving progress on LeetCode!
+
 ## 🔗 Connect with Me:
 
 <p align="left">
