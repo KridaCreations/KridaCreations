@@ -13,7 +13,9 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 
 - Graph Algorithm Visualizer ⚛ [LINK](https://kridacreations.github.io/graph/)
 
-- Physics engine ☄ [LINK](https://github.com/KridaCreations/PunyPhysics) 
+- Physics engine ☄ [LINK](https://github.com/KridaCreations/PunyPhysics)
+
+- Math library 🧮 [LINK](https://github.com/KridaCreations/PunyPhysics)
 
 ## Skills
 
@@ -67,6 +69,12 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       <br/>MySQL
     </td>
     <td align="center" style="padding: 15px;">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="40" height="40"/>
+      <br/>Git
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="padding: 15px;">
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
       <br/>Python
     </td>
@@ -74,8 +82,6 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
       <br/>HTML
     </td>
-  </tr>
-  <tr>
     <td align="center" style="padding: 15px;">
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
       <br/>CSS
@@ -84,6 +90,8 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
       <br/>JavaScript
     </td>
+  </tr>
+  <tr>
     <td align="center" style="padding: 15px;">
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/>
       <br/>Node.js
@@ -96,17 +104,21 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/>
       <br/>MongoDB
     </td>
-  </tr>
-  <tr>
     <td align="center" style="padding: 15px;">
       <img src="https://www.sfml-dev.org/download/goodies/sfml-logo-small.png" alt="sfml" width="40" height="40"/>
       <br/>SFML
     </td>
+  </tr>
+  <tr>
     <td align="center" style="padding: 15px;">
       <br/>IMGUI
     </td>
   </tr>
 </table>
+
+
+
+
 
 
 ## Ide and Tools
