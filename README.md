@@ -15,7 +15,7 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 
 - Physics engine ☄ [LINK](https://github.com/KridaCreations/PunyPhysics)
 
-- Math library 🧮 [LINK](https://github.com/KridaCreations/PunyPhysics)
+- Math library 🧮 [LINK](https://github.com/KridaCreations/PunnyMath)
 
 ## Skills
 
