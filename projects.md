@@ -1,8 +1,8 @@
 # Projects 
 
-## List
-    - SDAC Venture Game (multiplayer FPS Game)
-    - Punny Physics (physics engine) 
+List of the projects i made 
+- SDAC Venture Game (multiplayer FPS Game)  [see here](#SDAC-Venture-Game)
+- Punny Physics (physics engine) 
 
 # Details 
 
@@ -15,3 +15,6 @@ This game features fast paced shooting game which you can play with your friends
 - customize you avatar according to choice of your color
 - choose you map among two beautiful maps based on our college hostels
 
+## Punny Physics(Physics Engine)
+
+A physics engine i am developing
