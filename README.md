@@ -34,12 +34,15 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       Operating System
     </td>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
-      Physics Simulation
+      Low Level Design
     </td>
   </tr>
   <tr>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
       OOPS
+    </td>
+    <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
+      Physics Simulation
     </td>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
       Graphics Programming
