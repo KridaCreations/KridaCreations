@@ -39,6 +39,9 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
   </tr>
   <tr>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
+      Computer network
+    </td>
+    <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
       OOPS
     </td>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
