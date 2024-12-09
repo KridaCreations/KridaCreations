@@ -135,6 +135,10 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 <table>
   <tr>
     <td align="center" style="padding: 15px;">
+      <img src="https://code.visualstudio.com/assets/favicon.ico" alt="visual studio code" width="40" height="40"/>
+      <br/>VS Code
+    </td>
+    <td align="center" style="padding: 15px;">
       <img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Visual_Studio_Icon_2019.svg" alt="visual studio" width="40" height="40"/>
       <br/>Visual Studio
     </td>
@@ -150,12 +154,15 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
       <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="adobe illustrator" width="40" height="40"/>
       <br/>Adobe Illustrator
     </td>
+  </tr>
+  <tr>
     <td align="center" style="padding: 15px;">
       <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Inkscape_Logo.svg" alt="inkscape" width="40" height="40"/>
       <br/>Inkscape
     </td>
   </tr>
 </table>
+
 
 
 ## LeetCode Stats
