@@ -33,17 +33,22 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
       Operating System
     </td>
-    <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
-      Low Level Design
-    </td>
   </tr>
   <tr>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
-      Computer network
+      Low Level Design
     </td>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
-      OOPS
+      Computer Network
     </td>
+    <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
+      High Level Design
+    </td>
+    <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
+      Object Oriented Programming
+    </td>
+  </tr>
+  <tr>
     <td align="center" style="padding: 15px; font-size: 16px; font-weight: bold;">
       Microservices
     </td>
@@ -55,6 +60,8 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
     </td>
   </tr>
 </table>
+
+
 
 
 
