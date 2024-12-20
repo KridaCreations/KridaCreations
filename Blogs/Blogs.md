@@ -1,7 +1,6 @@
 # This is the page where i share my knowledge by writing blogs
 
-## Java
-- How to code signals in JAVA [LINK](\Java\Signalsjava.md)
+## Java [Link](\Java\README.md)
 
 ## Physics Engine
 Comming Soon..............
