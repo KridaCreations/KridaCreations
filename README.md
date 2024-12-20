@@ -17,6 +17,10 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 
 - Math library 🧮 [LINK](https://github.com/KridaCreations/PunnyMath)
 
+## Blogs 
+
+I share my ideas here [LINK](Blogs/Blogs.md)
+
 ## Skills
 
 <table>
