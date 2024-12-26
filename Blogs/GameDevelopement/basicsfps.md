@@ -31,10 +31,10 @@ Another problem is regarding a player seeing other players, because each player 
 This algorithm will try to interpolate the other players states to give a consistent movement on the clients side.<br>
 Another problem will arise due to the players shooting each other, because due to network lag each players will be seeing each other at different positions and this may cause confusion among the players. and who shoots first and in middle of all this some players can cheat, the answer to all this is a algorithm called `lag compensation`.
 
- #### The three major algorithm you need to make a multiplayer FPS game is 
-    - Client Side Prediction
-    - Entity Interpolation
-    - Lag Compensation
+#### The three major algorithm you need to make a multiplayer FPS game is 
+- [Client Side Prediction](./clientsideprediction.md)
+- Entity Interpolation
+- Lag Compensation
 I will be discussion all this in the upcomming blogs
 
 
