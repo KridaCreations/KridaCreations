@@ -30,7 +30,7 @@ First some points to keep in mind.
 
 Now i will start the detailed explanation
 
-we will be capturing inputs 60 times every second (60Hz - standard physics frame rate) and sending the keyboard state to the server , for example if our players can move in four direction:- forward , backward , left and right, and the button presses needed to move in the directions are "W", "S","A","D" respectively. then the  keyboard state which we will be sending each frame(each snapshot) will look like this 
+we will be capturing inputs 60 times every second (60Hz - standard physics frame rate) and sending the keyboard state to the server , for example if our players can move in four direction:- forward , backward , left and right, and the button presses needed to move in the directions are "W", "S", "A" and "D" respectively. then the  keyboard state which we will be sending each frame(each snapshot) will look like this 
 
 ```json
 {
@@ -44,7 +44,7 @@ we will be capturing inputs 60 times every second (60Hz - standard physics frame
 }
 ```
 
-the client application will be sending this frame to the server and running on it's machine also, and saving the this input state in an `input array`, Also the client will run this input frame on the client application and move the player character accordingly and the save the current state of character(character state in our case is the location coordinates) which we get after running the input state in an `output array`.
+**The client application will be sending this frame to the server and running on it's machine also, and saving the this input state in an `input array`, Also the client will run this input frame on the client application and move the player character accordingly and the save the current state of character(character state in our case is the location coordinates) which we get after running the input state in an `output array`.**
 
 as the player character can move in forward, backward, left and right direction the charater state will look like this :-
 
@@ -58,19 +58,29 @@ as the player character can move in forward, backward, left and right direction 
 }
 ```
 
-
 the input array and output array will look like this
 |Input array|Output array|
-|-----------------|------------|
+|:------------:|:------------:|
 |.|.|
 |.|.|
 |{"F": "5","input": "inputstate at frame 5"}|{"F":"5","output":"outputstate after frame 5}|
 |{"F": "6","input": "inputstate at frame 6"}|{"F":"6","output":"outputstate after frame 6}|
 |{"F": "7","input": "inputstate at frame 7"}|{"F":"7","output":"outputstate after frame 7}|
 |{"F": "8","input": "inputstate at frame 8"}|{"F":"8","output":"outputstate after frame 8}|
+|{"F": "9","input": "inputstate at frame 9"}|{"F":"9","output":"outputstate after frame 9}|
 |.|.|
 |.|.|
 
 
+When server will recieve the input state frame, it will run the input state and move the character player according to the output, and then send the output state back to the client, when the client will recieve the output state from server some frames have already passed on the client application. Suppose the output state recieved from the **server** is for **`"Frame 6"`** but client application is running **`"Frame 12"`**, So the client will search the output state of the **`Frame 6`** in the `Output array` and compare the `Frame 6 Server character state` and `Frame 6 Client character state`, this is called `Reconciliation`.For comparision we need to calculate the difference between the states, for this case iam considering difference between the states as the distance between the `"Frame 6 server state coordinate"` and `"Frame 6 client state coordinate"` <br>
 
+Now, There can be two cases :- 
+
+- If the `difference of the Frame 6 states` between Server and Client  is greater than the `Threshold` (Threshold will be some arbitrary distance let's say 0.5 units), then if means the difference between the states is too much and the client state needs to be corrected **(character state on the client side is too much deviated from the sever side character state, this difference can be due to some physics calculation, `due to cheating on the client side` or somtimes due to to much lag in the network )**. **the client will be moved back to the server state** (you might have sometimes seen you character moving back again and again when playing PUBG, Call of duty or any other first person shooter this is same thing happening there) and all the inputs from `Frame 7` to `Frame 12` will be processed again(because the client state state right now is set to the output state which should be after processing `Frame 6`), the input state of this frames can be found in the input array. `Now we can remove all the entries from input array and output array which are before "Frame 6"` because the output state of the "Frame 6" is verified.
+
+- If the `difference of the Frame 6 states` between Server and Client is smaller than the `Threshold`then it we can say that `server state of Frame 6` and `client state of Frame 6`is not much different and do not need correction and we will simply  remove all the entries from input array and output array which are before "Frame 6" because the output state of the "Frame 6" is verified.
+
+In this way the gameplay will keep on going....
+
+That was pretty much all the details of Client prediction algorithm. 
 
