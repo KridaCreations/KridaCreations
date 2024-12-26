@@ -30,13 +30,47 @@ First some points to keep in mind.
 
 Now i will start the detailed explanation
 
-we will be capturing inputs 60 times every second (60Hz - standard physics frame rate) and sending the kepboard state to the server , for example if our players can move in four direction:- forward , backward , left and right, and the button presses needed to move in the direction is "W", "s","A","D" respectively. this keyboard state which we will be sending each frame(each snapshot) will look like this 
+we will be capturing inputs 60 times every second (60Hz - standard physics frame rate) and sending the keyboard state to the server , for example if our players can move in four direction:- forward , backward , left and right, and the button presses needed to move in the directions are "W", "S","A","D" respectively. then the  keyboard state which we will be sending each frame(each snapshot) will look like this 
 
 ```json
 {
-    "forward":"ispressed", //ispressed will be true if "W" button is pressed otherwise false
-    "backward":"ispressed", //ispressed will be true if "S" button is pressed otherwise false
-    "left":"ispressed", //ispressed will be true if "A" button is pressed otherwise false
-    "right":"ispressed", //ispressed will be true if "D" button is pressed otherwise false
+    "F":"<frameno>", //the serial no of the frame helps in tracking when the the acknowledgement of the frame is recieved
+    "input":{
+        "forward":"<ispressed>", //ispressed will be true if "W" button is pressed otherwise false
+        "backward":"<ispressed>", //ispressed will be true if "S" button is pressed otherwise false
+        "left":"<ispressed>", //ispressed will be true if "A" button is pressed otherwise false
+        "right":"<ispressed>", //ispressed will be true if "D" button is pressed otherwise false
+    }
 }
 ```
+
+the client application will be sending this frame to the server and running on it's machine also, and saving the this input state in an `input array`, Also the client will run this input frame on the client application and move the player character accordingly and the save the current state of character(character state in our case is the location coordinates) which we get after running the input state in an `output array`.
+
+as the player character can move in forward, backward, left and right direction the charater state will look like this :-
+
+```json
+{
+    "F":"<frameno>", //the serial no of the frame which output is store in the field output
+    "output":{
+        "X":"<x-coordinate>", //x coordinate after processing keyboard state input of frameno "F"
+        "Y":"<y-corrdinate>", //Y coordinate after processing keyboard state input of frameno "F"
+    }
+}
+```
+
+
+the input array and output array will look like this
+|Input array|Output array|
+|-----------------|------------|
+|.|.|
+|.|.|
+|{"F": "5","input": "inputstate at frame 5"}|{"F":"5","output":"outputstate after frame 5}|
+|{"F": "6","input": "inputstate at frame 6"}|{"F":"6","output":"outputstate after frame 6}|
+|{"F": "7","input": "inputstate at frame 7"}|{"F":"7","output":"outputstate after frame 7}|
+|{"F": "8","input": "inputstate at frame 8"}|{"F":"8","output":"outputstate after frame 8}|
+|.|.|
+|.|.|
+
+
+
+
