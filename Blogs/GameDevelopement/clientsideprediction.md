@@ -59,18 +59,20 @@ as the player character can move in forward, backward, left and right direction 
 ```
 
 the input array and output array will look like this
-|Input array|Output array|
-| --------- | ---------- |
-|.|.|
-|.|.|
-|{"F": "5","input": "inputstate at frame 5"}|{"F":"5","output":"outputstate after frame 5}|
-|{"F": "6","input": "inputstate at frame 6"}|{"F":"6","output":"outputstate after frame 6}|
-|{"F": "7","input": "inputstate at frame 7"}|{"F":"7","output":"outputstate after frame 7}|
-|{"F": "8","input": "inputstate at frame 8"}|{"F":"8","output":"outputstate after frame 8}|
-|{"F": "9","input": "inputstate at frame 9"}|{"F":"9","output":"outputstate after frame 9}|
-|.|.|
-|.|.|
 
+ |Input array|Output array|
+ | --------- | ---------- |
+ |.|.|
+ |.|.|
+ |.|.|
+ |.|.|
+
+
+|{"F": "5","input": "inputstate at frame 5"}|{"F":"5","output":"outputstate after frame 5}|
+ |{"F": "6","input": "inputstate at frame 6"}|{"F":"6","output":"outputstate after frame 6}|
+ |{"F": "7","input": "inputstate at frame 7"}|{"F":"7","output":"outputstate after frame 7}|
+ |{"F": "8","input": "inputstate at frame 8"}|{"F":"8","output":"outputstate after frame 8}|
+ |{"F": "9","input": "inputstate at frame 9"}|{"F":"9","output":"outputstate after frame 9}|
 
 When server will recieve the input state frame, it will run the input state and move the character player according to the output, and then send the output state back to the client, when the client will recieve the output state from server some frames have already passed on the client application. Suppose the output state recieved from the **server** is for **`"Frame 6"`** but client application is running **`"Frame 12"`**, So the client will search the output state of the **`Frame 6`** in the `Output array` and compare the `Frame 6 Server character state` and `Frame 6 Client character state`, this is called `Reconciliation`.For comparision we need to calculate the difference between the states, for this case iam considering difference between the states as the distance between the `"Frame 6 server state coordinate"` and `"Frame 6 client state coordinate"` <br>
 
