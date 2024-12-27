@@ -60,7 +60,7 @@ as the player character can move in forward, backward, left and right direction 
 
 the input array and output array will look like this
 |Input array|Output array|
-|-----------|------------|
+| --------- | ---------- |
 |.|.|
 |.|.|
 |{"F": "5","input": "inputstate at frame 5"}|{"F":"5","output":"outputstate after frame 5}|
