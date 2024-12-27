@@ -19,7 +19,7 @@ I hold a Bachelor's in Technology in Electrical Engineering from the Indian Inst
 
 ## Blogs 
 
-I share my ideas here [LINK](Blogs/Blogs.md)
+I share my knowledge here [LINK](https://kridacreations.github.io/KridaCreations/Blogs/Blogs.html)
 
 ## Skills
 
