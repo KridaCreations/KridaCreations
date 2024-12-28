@@ -8,3 +8,7 @@ one naive way is to continuously broadcast the movement made by each player ever
 - There are three player playing the Game `Player A`, `Player B` and `Player C`.
 - We will be disucssing the algorithm from the perspective of `Player A`, means we will try to synchronize the movement of the other players(Player B and Player C) on the machine of Player A.
 - Player A will be synchronised with **his character on server** through the `Client Side Prediction` algorithm.
+
+# Algorithm
+As we discussed in the first part of this blog series [Basics of Multiplayer FPS](./basicsfps.md), that the main game will be running on the server machine, 
+    But along with this after some periodic 
